@@ -1,11 +1,6 @@
 import streamlit as st
 import pandas as pd
 import os
-#dir_location = os.listdir("C:\python35\influapp.py")
-#for influapp in dir_location:
- #   print(influapp)
-
-
 data_youtube = pd.read_csv("social media influencers - youtube.csv")
 data_youtube.rename(columns={'channel name': 'Creator Name'}, inplace=True)
 # Define a function to suggest YouTube creators based on input category and country
