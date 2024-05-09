@@ -6,7 +6,7 @@ import os
  #   print(influapp)
 
 
-data_youtube = pd.read_csv("C:\python35\smd.csv")
+data_youtube = pd.read_csv("social media influencers - youtube.csv")
 data_youtube.rename(columns={'channel name': 'Creator Name'}, inplace=True)
 # Define a function to suggest YouTube creators based on input category and country
 def suggest_creators(category, country):
